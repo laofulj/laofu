@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>注册</title>
+    <link rel="stylesheet" href="../common/reset.css">
+    <link rel="stylesheet" href="../common/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <i id="goBack" class="icon iconfont">&#xe619;</i>
+        用户注册
+    </header>
+    <div class="content">
+        <ul class="list">
+            <li>
+                <span>账户名称：</span>
+                <input id="userName" type="text" placeholder="请输入账户" />
+            </li>
+            <li>
+                <span>登录密码：</span>
+                <input id="pass" type="password" placeholder="请输入密码" />
+            </li>
+            <li>
+                <span>确认密码：</span>
+                <input id="spass" type="password" placeholder="请输入密码" />
+            </li>
+            <p id="user" class="text">用户名重名</p>
+            <p id="pw" class="text">密码不一致</p>
+        </ul>
+        <div id="btn" class="registerBtn">
+            <input class="btn" type="button" value="确定注册">
+        </div>
+    </div>
+</div>
+<script src="../lib/zepto.min.js"></script>
+<script src="../lib/fastclick.js"></script>
+<script src="../js/register.js"></script>
+</body>
+</html>

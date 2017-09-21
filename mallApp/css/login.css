@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+input {
+    outline: none;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrapper .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background: #A90506;
+    font-size: 16px;
+    color: #fff;
+}
+
+.wrapper .content {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #F3EFF0;
+}
+
+.wrapper .content .list {
+    margin-top: 15px;
+}
+
+.wrapper .content .list li {
+    display: flex;
+    width: 90%;
+    height: 44px;
+    line-height: 44px;
+    margin: 0 auto 3px auto;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.wrapper .content .list li input {
+    padding-left: 11px;
+    width: 100%;
+}
+
+.content .showPW-wrapper,
+.content .rememberPW {
+    display: flex;
+    width: 90%;
+    margin: 25px auto 0 auto;
+    font-size: 0;
+}
+
+.content .checkbox {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #9E9C9D;
+}
+
+.content .showPW-wrapper .showPW,
+.content .showPW-wrapper .forgetPW {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+    margin: 0 20px 0 8px;
+    font-size: 14px;
+}
+
+.content .showPW-wrapper .forgetPW {
+    color: #fe0f53;
+}
+
+.content .rememberPW .text {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.content .btn-wrapper {
+    margin-top: 25px;
+}
+
+.content .login,
+.content .register {
+    width: 90%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.content .login{
+    background: #BF0707;
+    margin-bottom: 6px;
+    box-shadow: -1px -1px 2px #BF0707, 1px 1px 2px #BF0707;
+}
+.content .login input{
+    font-size: 16px;
+    color: #fff;
+    background: #BF0707;
+}
+.content .register{
+    background: #4A4A4A;
+    box-shadow: -1px -1px 2px #4A4A4A, 1px 1px 2px #4A4A4A;
+}
+.content .register input{
+    font-size: 16px;
+    color: #fff;
+    background: #4A4A4A;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>登录</title>
+    <link rel="stylesheet" href="../common/reset.css">
+    <link rel="stylesheet" href="../common/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">开心摇一摇用户登录</header>
+    <div class="content">
+        <ul class="list">
+            <li>
+                <input id="userName" type="text" placeholder="请输入账户" />
+            </li>
+            <li>
+                <input id="pass" type="password" placeholder="请输入密码">
+            </li>
+        </ul>
+        <div class="showPW-wrapper">
+            <input id="showPW" class="checkbox" type="checkbox">
+            <span class="showPW">显示密码</span>
+            <span class="forgetPW">忘记密码</span>
+        </div>
+        <div class="rememberPW">
+            <input id="rememberPW" class="checkbox" type="checkbox" checked />
+            <span class="text">记住密码自动登录</span>
+        </div>
+        <div class="btn-wrapper">
+            <div id="login" class="login">
+                <input type="button" value="登录">
+            </div>
+            <div id="register" class="register">
+                <input type="button" value="注册">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../lib/zepto.min.js"></script>
+<script src="../lib/fastclick.js"></script>
+<script src="../js/login.js"></script>
+</body>
+</html>

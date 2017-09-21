@@ -1,0 +1,181 @@
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*header部分*/
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    background: #AD1B1B;
+    font-size: 16px;
+    color: #fff;
+}
+
+.header .icon {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    width: 52px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #B00A0A;
+    font-size: 20px;
+}
+
+/*nav部分*/
+.nav {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    width: 100%;
+    height: 29px;
+    background: #9A9FA5;
+}
+
+.nav .list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav .list li {
+    position: relative;
+    height: 29px;
+    line-height: 29px;
+    color: #9a9fa3;
+}
+.nav .list li a,
+.nav .list li a .icon{
+    display:block;
+    height: 29px;
+    line-height: 29px;
+}
+.nav .list li.active :after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    content: " ";
+    border: 5px solid transparent;
+    border-bottom-color: #fff;
+}
+
+.nav .list li.active .icon {
+    color: #fff;
+}
+
+/*section部分*/
+.section {
+    position: absolute;
+    top: 72px;
+    bottom: 49px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background: #f3f4f6;
+}
+.section .section-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 23px 0;
+}
+.section .section-list li{
+    width: 2.48rem;
+    margin-bottom: 16px;
+}
+.section .section-list li .picture{
+    width: 2.44rem;
+    height: 2.44rem;
+    border: 1px solid #ccc;
+    box-shadow: -1px -1px 1px #ccc, 1px 1px 1px #ccc;
+}
+.section .section-list li .picture a{
+    display: block;
+    width: 2.44rem;
+    height: 2.44rem;
+}
+.section .section-list li .picture img{
+    width: 100%;
+    height: 100%;
+}
+.section .section-list li .desc,
+.section .section-list li .price{
+    width: 2.48rem;
+    height:20px;
+    text-align: center;
+    padding-top: 9px;
+    font-size: 14px;
+}
+.section .section-list li .desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.section .section-list li .price{
+    display: flex;
+    justify-content: space-between;
+}
+.section .section-list li .price .newPrice {
+    color: #f00;
+}
+.section .section-list li .price .oldPrice{
+    color: #878785;
+    text-decoration: line-through;
+}
+/*footer部分*/
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 49px;
+    background: #484850;
+}
+
+.footer .footer-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .footer-list li {
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer .footer-list li.active :after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    content: ' ';
+    width: 200%;
+    border-top: 2px solid #f00;
+}
+
+.footer .footer-list li .icon {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 6px 0;
+}
+
+.footer .footer-list li div {
+    width: 100%;
+    text-align: center;
+}
